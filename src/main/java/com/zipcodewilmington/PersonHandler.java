@@ -36,7 +36,7 @@ public class PersonHandler {
 
     public String forLoop() { //FOR LOOP METHOD
         String result = "";
-        for (int i = 0; i < personArray.length; i++) {
+        for(int i = 0; i < personArray.length; i++) {
             result += personArray[i].toString();
         }
         return result;
@@ -57,8 +57,17 @@ public class PersonHandler {
 
 
 
-    public String forEachLoop() {
+    public String forEachLoop() { //FOR EACH LOOP METHOD
         String result = "";
+        String[] str = new String[personArray.length];
+        int i = 0;
+        for(String s : str) {
+            result += personArray[i].toString();
+            i++;
+        }
+        return result;
+    }
+
         // identify array's type
         // identify array's variable-name
 
@@ -68,8 +77,6 @@ public class PersonHandler {
                 // append `stringRepresentation` to `result` variable
             // end loop
 
-        return result;
-    }
 
 
     public Person[] getPersonArray() {
